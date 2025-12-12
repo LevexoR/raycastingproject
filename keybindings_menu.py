@@ -65,7 +65,7 @@ class KeybindingsMenu:
 
                 if i == self.selected_index:
                     self.arrow_timer += 1
-                    if self.arrow_timer % 60 < 30:
+                    if self.arrow_timer % 30 < 15:
                         arrow = option_font.render("→", False, (255, 255, 255))
                         arrow_rect = arrow.get_rect(right=rect.left - 10, centery=rect.centery)
                         self.logical_surface.blit(arrow, arrow_rect)

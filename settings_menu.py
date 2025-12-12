@@ -55,7 +55,7 @@ class SettingsMenu:
                 # Flèche clignotante
                 if i == self.selected_index:
                     self.arrow_timer = self.arrow_timer + 1
-                    if self.arrow_timer % 60 < 30:  # Clignote toutes les 30 frames
+                    if self.arrow_timer % 30 < 15:  # Clignote toutes les 30 frames
                         arrow_surface = option_font.render("→", False, (255, 255, 255))
                         arrow_rect = arrow_surface.get_rect()
                         arrow_rect.right = text_rect.left - 10
